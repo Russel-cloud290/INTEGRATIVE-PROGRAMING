@@ -24,7 +24,7 @@
             background-color: #ffffff;
             color: #111111;
             min-height: 100vh;
-            padding: 40px 20px;
+            padding: 25px 15px;
         }
 
 
@@ -34,12 +34,12 @@
 
         .team-container {
             width: 100%;
-            max-width: 1100px;
+            max-width: 900px;
             margin: auto;
 
             background-color: #ffffff;
 
-            padding: 40px 60px;
+            padding: 30px 40px;
 
             position: relative;
             overflow: hidden;
@@ -58,17 +58,17 @@
 
             top: 48%;
 
-            width: 60px;
-            height: 120px;
+            width: 45px;
+            height: 90px;
 
             transform: translateY(-50%);
 
             background: repeating-linear-gradient(
                 -45deg,
                 #ff0055 0px,
-                #ff0055 4px,
-                transparent 4px,
-                transparent 10px
+                #ff0055 3px,
+                transparent 3px,
+                transparent 8px
             );
 
             z-index: 0;
@@ -90,7 +90,8 @@
         .header {
             display: flex;
             align-items: center;
-            margin-bottom: 60px;
+
+            margin-bottom: 40px;
 
             position: relative;
             z-index: 1;
@@ -99,40 +100,43 @@
         .title-container {
             display: flex;
             align-items: center;
-            flex: 1;
+
+            width: 100%;
         }
 
         .title {
-            font-size: clamp(2rem, 5vw, 3.2rem);
+            font-size: clamp(1.7rem, 4vw, 2.5rem);
+
             font-weight: 900;
-            letter-spacing: 2px;
+
+            letter-spacing: 1.5px;
+
             text-transform: uppercase;
+
             white-space: nowrap;
         }
 
         .title .outline {
             color: transparent;
-            -webkit-text-stroke: 2px #ff0055;
+
+            -webkit-text-stroke: 1.5px #ff0055;
         }
 
         .title .filled {
             color: #ff0055;
-            margin-left: 8px;
+
+            margin-left: 6px;
         }
 
         .header-line {
-            height: 3px;
+            height: 2px;
+
             background-color: #ff0055;
+
             flex: 1;
-            margin-left: 25px;
+
+            margin-left: 18px;
         }
-
-
-        /* =========================================
-           LOGO
-        ========================================= */
-
-        
 
 
         /* =========================================
@@ -144,7 +148,7 @@
 
             grid-template-columns: repeat(3, 1fr);
 
-            gap: 45px 36px;
+            gap: 32px 25px;
 
             position: relative;
             z-index: 1;
@@ -165,14 +169,15 @@
         ========================================= */
 
         .image-wrapper {
-            width: 100%;
+            width: 50%;
+
             aspect-ratio: 1 / 1;
 
             overflow: hidden;
 
             background-color: #f1f1f1;
 
-            margin-bottom: 20px;
+            margin-bottom: 14px;
 
             position: relative;
         }
@@ -200,15 +205,15 @@
         .member-name {
             color: #ff0055;
 
-            font-size: 1.1rem;
+            font-size: 0.9rem;
 
             font-weight: 900;
 
             text-transform: uppercase;
 
-            letter-spacing: 1px;
+            letter-spacing: 0.7px;
 
-            margin-bottom: 10px;
+            margin-bottom: 7px;
         }
 
 
@@ -219,9 +224,9 @@
         .member-desc {
             color: #333333;
 
-            font-size: 0.9rem;
+            font-size: 0.75rem;
 
-            line-height: 1.8;
+            line-height: 1.6;
 
             font-weight: 400;
         }
@@ -253,13 +258,15 @@
         @media (max-width: 900px) {
 
             .team-container {
-                padding: 30px;
+                max-width: 750px;
+
+                padding: 25px 30px;
             }
 
             .team-grid {
                 grid-template-columns: repeat(2, 1fr);
 
-                gap: 35px 25px;
+                gap: 28px 22px;
             }
 
             .member-seven {
@@ -280,7 +287,7 @@
         @media (max-width: 600px) {
 
             body {
-                padding: 20px 10px;
+                padding: 15px 8px;
             }
 
             .team-container {
@@ -288,28 +295,33 @@
             }
 
             .header {
-                margin-bottom: 40px;
+                margin-bottom: 30px;
             }
 
             .title {
-                font-size: 1.8rem;
+                font-size: 1.6rem;
             }
 
             .header-line {
                 display: none;
             }
 
-
-            }
-
             .team-grid {
                 grid-template-columns: 1fr;
 
-                gap: 45px;
+                gap: 35px;
             }
 
             .member-seven {
                 grid-column: auto;
+            }
+
+            .member-name {
+                font-size: 0.95rem;
+            }
+
+            .member-desc {
+                font-size: 0.8rem;
             }
         }
 
@@ -348,14 +360,11 @@
 
                 </h1>
 
-
                 <div class="header-line"></div>
 
             </div>
 
-
         </div>
-
 
 
         <!-- =====================================
@@ -375,7 +384,7 @@
 
                     <img
                         src="george.JPEG"
-                        alt="John Russel Gonzales"
+                        alt="George Mico Lopez"
                     >
 
                 </div>
@@ -397,13 +406,13 @@
                     </p>
 
                     <p>
-                        <strong>HOBBY:</strong> MAG ARAL NG MABUTI PARA MASAYA SI MOMMY
+                        <strong>HOBBY:</strong>
+                        MAG ARAL NG MABUTI PARA MASAYA SI MOMMY
                     </p>
 
                 </div>
 
             </div>
-
 
 
             <!-- ==================================
@@ -442,9 +451,8 @@
                     </p>
 
                 </div>
-<div><div></div></div>
-            </div>
 
+            </div>
 
 
             <!-- ==================================
@@ -487,7 +495,6 @@
             </div>
 
 
-
             <!-- ==================================
                  MEMBER 4
             =================================== -->
@@ -526,7 +533,6 @@
                 </div>
 
             </div>
-
 
 
             <!-- ==================================
@@ -569,7 +575,6 @@
             </div>
 
 
-
             <!-- ==================================
                  MEMBER 6
             =================================== -->
@@ -579,7 +584,7 @@
                 <div class="image-wrapper">
 
                     <img
-                        src="rivera.jpeg"
+                        src="justine.jpeg"
                         alt="Justine Rivera"
                     >
 
@@ -610,7 +615,6 @@
             </div>
 
 
-
             <!-- ==================================
                  MEMBER 7
             =================================== -->
@@ -619,22 +623,10 @@
 
                 <div class="image-wrapper">
 
-                    <div style="
-                        width: 100%;
-                        height: 100%;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        background: #f1f1f1;
-                        color: #999999;
-                        font-size: 1.2rem;
-                        font-weight: 800;
-                    ">
-                         <img
+                    <img
                         src="russ.JPEG"
-                        alt="Justine Rivera"
+                        alt="John Russel Gonzales"
                     >
-                    </div>
 
                 </div>
 
